@@ -1,0 +1,32 @@
+<section>
+
+  <fieldset>
+    <h1>Formulario seccion</h1>
+    <label for="">Id</label>
+    <input
+      type="number"
+      name="id"
+      [value]="nuevoHistorial.id"
+
+      >
+
+  </fieldset>
+  <fieldset>
+    <label for="">Nombre de seccion</label>
+    <input type="text"
+     name="nombreSeccion"
+     [value]="nuevoHistorial.seccion">
+
+    <p>{{ nuevoHistorial.seccion }} </p>
+  </fieldset>
+  <fieldset>
+    <button
+      type="button"
+      role="button"
+      (click)="guardarHistorial()"
+    >
+      Guardar
+    </button>
+  </fieldset>
+
+</section>

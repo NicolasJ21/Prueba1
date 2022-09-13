@@ -1,0 +1,52 @@
+
+<section>
+
+    <fieldset>
+      <h1>Formulario alumnos</h1>
+      <label for="">Rut</label>
+      <input
+        type="text"
+        name="rut"
+        [value]="nuevoHistorial.run"
+        (input)="cambiarRun($event)"
+
+        >
+        <p>{{ nuevoHistorial.run }}</p>
+    </fieldset>
+    <fieldset>
+      <label for="">Nombre</label>
+      <input type="text"
+        name="nombre"
+        [value]="nuevoHistorial.nombre"
+        (input)="cambiarNombre($event)"
+>
+      <p>{{ nuevoHistorial.nombre }} </p>
+    </fieldset>
+    <fieldset>
+        <label for="">Apellido</label>
+      <input type="text"
+      name="apellido"
+      [value]="nuevoHistorial.apellido"
+      (input)="cambiarApellido($event)">
+      <p>{{ nuevoHistorial.apellido }}</p>
+      </fieldset>
+    <fieldset>
+      <label for="">Edad</label>
+      <input
+        type="number"
+        name="edad"
+        [value]="nuevoHistorial.edad">
+    </fieldset>
+    <fieldset>
+      <button
+        type="button"
+        role="button"
+        (click)="guardarHistorial()"
+      >
+        Guardar
+      </button>
+    </fieldset>
+
+</section>
+
+

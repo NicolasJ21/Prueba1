@@ -1,0 +1,34 @@
+<section>
+
+  <fieldset>
+    <h1>Formulario Historial</h1>
+    <label for="">Fecha y hora</label>
+    <input
+      type="text"
+      name="fechaYhora"
+      [value]="nuevoHistorial.fechaYhora"
+
+
+      >
+      <p>{{ nuevoHistorial.fechaYhora }}</p>
+  </fieldset>
+  <fieldset>
+    <label for="">Tipo alumno</label>
+    <input type="text"
+      name="tipoAlumno"
+      [value]="nuevoHistorial.tipoAlumno"
+
+>
+    <p>{{ nuevoHistorial.tipoAlumno }} </p>
+  </fieldset>
+  <fieldset>
+    <button
+      type="button"
+      role="button"
+      (click)="guardarHistorial()"
+    >
+      Guardar
+    </button>
+  </fieldset>
+
+</section>
